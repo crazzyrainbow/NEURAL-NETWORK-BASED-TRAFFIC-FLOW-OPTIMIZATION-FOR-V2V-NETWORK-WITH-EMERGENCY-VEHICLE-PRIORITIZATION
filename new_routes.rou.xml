@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <vType id="car" accel="1.0" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="13.89" guiShape="passenger"/>
+  <vType id="bike" accel="1.5" decel="4.5" sigma="0.5" length="2.0" minGap="1.0" maxSpeed="10.0" guiShape="motorcycle"/>
+  <vType id="truck" accel="0.8" decel="4.5" sigma="0.5" length="10.0" minGap="3.0" maxSpeed="10.0" guiShape="truck"/>
+  <vType id="ambulance" accel="1.2" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="25.0" guiShape="emergency"/>
+  <route id="route0" edges="-E6 -E1 -E0"/>
+  <route id="route1" edges="E0 E1 E6"/>
+  <route id="route2" edges="-E6 -E1 -E0"/>
+  <route id="route3" edges="E0 E1 E6"/>
+  <route id="route4" edges="-E6 -E1 -E0"/>
+  <route id="route5" edges="E0 E1 E6"/>
+  <route id="route6" edges="-E6 -E1 -E0"/>
+  <route id="route7" edges="E0 E1 E6"/>
+  <vehicle id="vehicle_51" type="car" route="route6" depart="2"/>
+  <vehicle id="vehicle_fd" type="car" route="route1" depart="10"/>
+  <vehicle id="vehicle_bf" type="car" route="route2" depart="10"/>
+  <vehicle id="vehicle_29" type="bike" route="route1" depart="11"/>
+  <vehicle id="vehicle_f6" type="ambulance" route="route2" depart="14" color="1,0,0"/>
+  <vehicle id="vehicle_92" type="truck" route="route0" depart="26"/>
+</routes>
